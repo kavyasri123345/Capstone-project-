@@ -1,0 +1,93 @@
+/* Centering the product list container */
+.product-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Heading styling */
+.product-list h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search filter styling */
+.product-list app-search-filter {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Styling the product list */
+.product-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list li {
+    font-size: 18px;
+    color: #444;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+}
+
+/* Buttons styling */
+.product-list button {
+    background: #007bff;
+    color: rgb(40, 8, 157);
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.product-list button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Add Product button */
+.product-list > button {
+    display: block;
+    margin: 20px auto;
+    background: #28a745;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.product-list > button:hover {
+    background: #218838;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .product-list {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .product-list li {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .product-list button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,82 @@
+/* Centering the form */
+.add-product-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Heading styling */
+.add-product-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form inputs */
+.add-product-form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.add-product-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-product-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.add-product-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Error messages */
+.add-product-form small {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Submit button */
+.add-product-form button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.add-product-form button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.add-product-form button:hover:not(:disabled) {
+    background: #218838;
+    text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .add-product-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
